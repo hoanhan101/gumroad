@@ -33,7 +33,7 @@ When a customer make a purchase or a refund:
 
 At the end of the day, a product balance is the balance for a particular product while seller balance is the total balance that one has across all of their products.
 
-To support rolling payouts, depending on the payout frequency in week (whether it's every 1 week, every 2 week, and so on), on the payout day (whether it's Monday, Tuesday, and so on), query the purchase table to calculate the sum of those purchases prices which have the corresponding start and end date timestamps up to a week before that. For example,
+To support rolling payouts, depending on the payout frequency in week (whether it's every 1 week, every 2 weeks, and so on), on the payout day (whether it's Monday, Tuesday, and so on), query the purchase table to calculate the sum of those purchases prices which have the corresponding start and end date timestamps up to a week before that. For example,
 - If it's 1-week payout, and the payout day is Friday 23th, the corresponding start and end timestamps are Monday 12th and Friday 16th.
 - If it's 2-week payout, and the payout day is Friday 23th, the corresponding start and end timestamps are Monday 5th and Friday 16th.
 

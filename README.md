@@ -1,5 +1,5 @@
 # gumroad
 
 - [Find the pivot](pivot.py)
-- [Overlay](overlay.html)
+- [Overlay POC](overlay.html)
 - [Data model design](design.md)
