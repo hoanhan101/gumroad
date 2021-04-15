@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Gumroad Overlay POC</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   </head>
+   <style>
+      #overlay {width:90%; height: 90%; display: none; position: fixed;margin-top: 5%; margin-left: 5%; background:#FFF; }
+      #overlay iframe {display:none; width: 100%; height: 100%; position: absolute; border: none; }
+   </style>
+   <body>
+      <h1>Gumroad overlay</h1>
+      <div id="overlay">
+         <iframe id="frame" src="" width="100%" height="500">
+         </iframe>
+      </div>
+      <button id="show-button">Buy my product</button>
+      <button id="hide-button">Hide</button>
+      <a class="gumroad-button" href="https://gum.co/bpUYF"></a>
+   </body>
+   <script>
+      $(document).ready(function(){
+        $("#show-button").click(function () { 
+            var url = $('.gumroad-button').attr('href');
+            $("#frame").attr("src", url);
+            $('#overlay').fadeIn();
+            $('iframe').fadeIn();
+        });
+        $("#hide-button").click(function () { 
+            $('#overlay').hide();
+            $('iframe').hide();
+        });
+      });
+   </script>
+</html>
